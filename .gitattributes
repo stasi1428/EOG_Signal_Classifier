@@ -1,2 +1,44 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+# -------------------------
+# Line endings
+# -------------------------
+* text=auto eol=lf
+
+# -------------------------
+# Python source
+# -------------------------
+*.py text diff=python
+*.ipynb text
+
+# -------------------------
+# Documentation
+# -------------------------
+*.md text
+*.rst text
+LICENSE text
+
+# -------------------------
+# Data files
+# -------------------------
+*.csv text
+*.json text
+*.yml text
+*.yaml text
+
+# -------------------------
+# Binary files (no diff)
+# -------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.joblib binary
+*.h5 binary
+*.pkl binary
+
+# -------------------------
+# Notebooks
+# -------------------------
+# Treat Jupyter notebooks as text for better diffs
+*.ipynb text linguist-language=Jupyter Notebook
